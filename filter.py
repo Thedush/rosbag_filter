@@ -26,7 +26,7 @@ old = 0
 switch =False
 filtername= bagName.strip('.bag') + '_filter.bag'
 print filtername
-'''
+
 with rosbag.Bag('filter.bag', 'w') as outbag:
 	for message in listOfTopics:
 		slope_list = []
@@ -140,5 +140,5 @@ with rosbag.Bag('filter.bag', 'w') as outbag:
 		# for pair in slope_list:
 		# 				value= (pair[1])
 						#print value
-'''
+
 bag.close()
